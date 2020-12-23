@@ -1,3 +1,6 @@
-struct PacketStream {
-    var text = "Hello, World!"
+import Foundation
+
+public protocol PacketStream
+{
+    func nextPacket() -> (Date, Data)
 }
