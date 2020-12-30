@@ -14,7 +14,7 @@ public struct CaptureResult
 
 public protocol PacketStream
 {
-    func startCapture()
+    func startCapture() throws
     func nextCaptureResult() -> CaptureResult?
-    func stopCapture()
+    func stopCapture() throws
 }
